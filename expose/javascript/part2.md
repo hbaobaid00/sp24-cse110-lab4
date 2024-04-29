@@ -1,6 +1,13 @@
 # Answers for Part 2
 
-1. Line 12 prints the value 3 because i is declared as a var which means that the variable can be accessed outside the block. Once the for loop is ran, i ends off with the value of 3 because the size of prices is 3.
+1. Line 12 prints the value 3 because "i" is declared as a var which means that the variable can be accessed outside the block. Once the for loop is ran, i ends off with the value of 3 because the size of prices is 3.
 2. Line 13 prints the value 150 because it will take the discount price of the last element in the array since "discountedPrice" is updated after each iteration. When you apply the discount to 300, it comes to 150.
 3. Line 14 prints the value 150 because the last update to "finalPrice" would be 150 * 100 / 100 which is 150.
 4. The function returns [50, 100, 150] because the loop takes the discount of each item in the list and pushes it to a new list which is what gets returned.
+5. When it comes to printing line 12, there was an error because "i" was declared with "let" which makes it a local variable, so when you try to call the variable from outside its scope, an error will be thrown when you try running it because it wasn't defined properly. You can only call the variable within the for loop.
+6. When it comes to printing line 13, there  was an error because "discountedPrice" was declared with "let" which means that it can only be used within the scope it was declared which is the for loop. If you try calling the variable outside the scope, you get the error that the variable was undefined.
+7. Line 14 prints out 150. There is no error here because the declaration of "finalPrice" is in the same scope as when finalPrice was called to print. The scope here would be the function meaning that the variable will print properly.
+8. The function would return [50, 100, 150]. Since the variable "discounted" was declared with the "let" keyword, then discounted can only be used within the specific scope which is the function. The variable "discounted" is just the variable "prices" but each item in the list is multiplied by half which is what the value of the "discount" variable is.
+9. When it comes to printing line 11, there was an error because "i" was declared with "let" which makes it a local variable, so when you try to call the variable from outside its scope, an error will be thrown when you try running it because it wasn't defined properly. You can only call the variable within the for loop.
+10. Line 12 prints out 3 because the variable "length" was declared earlier in the function and was never reassigned because it was a const variable. Since it is declared in the same scope, there is no error in calling it.
+11. The function returns [50, 100, 150]. Even though the list "discounted" changes after every iteration of the loop, there was never any reassignment of the variable which means that there should not be an error. 
