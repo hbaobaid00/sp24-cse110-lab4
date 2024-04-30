@@ -25,6 +25,15 @@
     * The output of "3" + null is 3null because javascript reads it as string concatenation since there are quotes being used which means it is equivalent to "3" + "null" which is 3null.
     * The output of true + 3 would be 4 because in javascript, true and false are read as binary numbers where 1 represents true and 0 represents false. This means javascript reads true + 3 as 1 + 3 which is 4.
     * The output of false + null would be 0 because javascript reads false as 0 when doing addition and reads null as 0 so the statement is equivalent to 0+0 which is 0.
-    * The output of "3" + undefined would be 3undefined because javascript reads this as a string concatenation since quotes were being used in the beginning, so it is equivalent to "3" + "undefined" which is 3undefined
+    * The output of "3" + undefined would be 3undefined because javascript reads this as a string concatenation since quotes were being used in the beginning, so it is equivalent to "3" + "undefined" which is 3undefined.
     * The output of "3" - undefined would be NaN which means the value of the output would be undefined. This happens because javascript reads this as an equation since you cannot subtract from strings and when you add or subtract a number from any undefined value, it wil always be undefined. It is similar to 3 - 1/0 which is undefined. 
+
 14. 
+    * The output of '2' > 1 is true because javascript converts the string into a numeric value since it is comparing it to another number, so 2 > 1 would output true.
+    * The output of '2' < '12' would be false because when comparing two strings, javascript compares the value from left to right so it first compares the 2 and the one and since 2 has a greater unicode value than 1, then the output would be false.
+    * The output of 2 == '2' would be true since javascript can do an automatic type conversion so the string is converted to a number and 2 does in fact equal 2 so it would return true.
+    * The output of 2 === '2' would be false because === is a more strict comparison than == so it compares the data types as well and since one type is an integer and the other is a string, the output would be false.
+    * The output of true == 2 would be false because true gets converted to a numeric value which would be 1 and 1 does not equal 2.
+    * The output of true === Boolean(2) would be true because 2 gets converted to a boolean and any non-zero value becomes true when it is converted to a boolean so it is similar to true === true which is true.
+15. The difference between == and === is that === is a more strict comparison than == so === compares the data types as well as the value while == just compares the value being compared.
+16. *File is in the javascript folder labeled "part2
