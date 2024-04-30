@@ -10,4 +10,21 @@
 8. The function would return [50, 100, 150]. Since the variable "discounted" was declared with the "let" keyword, then discounted can only be used within the specific scope which is the function. The variable "discounted" is just the variable "prices" but each item in the list is multiplied by half which is what the value of the "discount" variable is.
 9. When it comes to printing line 11, there was an error because "i" was declared with "let" which makes it a local variable, so when you try to call the variable from outside its scope, an error will be thrown when you try running it because it wasn't defined properly. You can only call the variable within the for loop.
 10. Line 12 prints out 3 because the variable "length" was declared earlier in the function and was never reassigned because it was a const variable. Since it is declared in the same scope, there is no error in calling it.
-11. The function returns [50, 100, 150]. Even though the list "discounted" changes after every iteration of the loop, there was never any reassignment of the variable which means that there should not be an error. 
+11. The function returns [50, 100, 150]. Even though the list "discounted" changes after every iteration of the loop, there was never any reassignment of the variable which means that there should not be an error.
+12.  
+     * To access the name of the student object, you would use student.name
+     * To access the Grad Year of the student object, you would use student["Grad Year"]
+     * To call the greeting function for the student object, you would use student.greeting()
+     * To access the name of the student's favorite teacher, you would use student["Favorite Teacher"].name
+     * To access the first element in the student's "courseLoad", you would use student.courseLoad[0]
+   
+13. 
+    * The output of  "3" + 2 is 32 because javascript reads this as a string concatenation so it is the same as "3" + "2" which would be 32.
+    * The output of "3" - 2 would be 1 because javascript reads this as numerical subtraction since you can't subtract strings from each other, so it converts it to 3 - 2 which is 1.
+    * The output of 3 + null would be 3 because javascript reads the null as 0 when you are doing an addition to another number, so 3 + 0 = 3.
+    * The output of "3" + null is 3null because javascript reads it as string concatenation since there are quotes being used which means it is equivalent to "3" + "null" which is 3null.
+    * The output of true + 3 would be 4 because in javascript, true and false are read as binary numbers where 1 represents true and 0 represents false. This means javascript reads true + 3 as 1 + 3 which is 4.
+    * The output of false + null would be 0 because javascript reads false as 0 when doing addition and reads null as 0 so the statement is equivalent to 0+0 which is 0.
+    * The output of "3" + undefined would be 3undefined because javascript reads this as a string concatenation since quotes were being used in the beginning, so it is equivalent to "3" + "undefined" which is 3undefined
+    * The output of "3" - undefined would be NaN which means the value of the output would be undefined. This happens because javascript reads this as an equation since you cannot subtract from strings and when you add or subtract a number from any undefined value, it wil always be undefined. It is similar to 3 - 1/0 which is undefined. 
+14. 
