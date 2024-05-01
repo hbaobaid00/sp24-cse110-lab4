@@ -37,3 +37,5 @@
     * The output of true === Boolean(2) would be true because 2 gets converted to a boolean and any non-zero value becomes true when it is converted to a boolean so it is similar to true === true which is true.
 15. The difference between == and === is that === is a more strict comparison than == so === compares the data types as well as the value while == just compares the value being compared.
 16. File is in the javascript folder labeled [part2-question16.js](https://github.com/hbaobaid00/sp24-cse110-lab4/blob/main/expose/javascript/part2-question16.js)
+17. The result of the function call would be the list [2, 4, 6] because when we pass in the array in the function, it iterates through each element in the list and calls doSomething with the parameter of each element in the list. So every number in the list gets multiplied by 2 and gets pushed to a new array.
+18.  
