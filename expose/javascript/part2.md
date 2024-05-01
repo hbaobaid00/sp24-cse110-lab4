@@ -39,3 +39,4 @@
 16. [part2-question16.js](https://github.com/hbaobaid00/sp24-cse110-lab4/blob/main/expose/javascript/part2-question16.js)
 17. The result of the function call would be the list [2, 4, 6] because when we pass in the array in the function, it iterates through each element in the list and calls doSomething with the parameter of each element in the list. So every number in the list gets multiplied by 2 and gets pushed to a new array which is what gets returned.
 18. [part2-question18.js](https://github.com/hbaobaid00/sp24-cse110-lab4/blob/main/expose/javascript/part2-question18.js)
+19. The function will print out 1, 4, 3, and 2 in that order. Since there is no timeout function for 1 and 4, those will be printed out first. Then 3 will be printed since that has the shortest timeout. Then 2 will be printed last since it has the longest delay time.
